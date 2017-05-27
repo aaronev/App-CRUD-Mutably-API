@@ -1,0 +1,24 @@
+{
+  "name": "app-mutably-api",
+  "version": "1.0.0",
+  "description": "app-mutably-api",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronev/App-CRUD-Mutably-API.git"
+  },
+  "author": "Aaron Villanueva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronev/App-CRUD-Mutably-API/issues"
+  },
+  "homepage": "https://github.com/aaronev/App-CRUD-Mutably-API#readme"
+}
