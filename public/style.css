@@ -1,0 +1,38 @@
+ul {
+  list-style: none;
+}
+
+.image {
+  width: 60%;
+}
+
+#listInfo {
+  border: solid;
+  margin: 10px;
+  height: 300%;
+  width: 50%;
+}
+
+#addForm {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+#updateForm {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 400px;
+}
+
+#updateForm fieldset {
+  padding: 10px;
+  width: 300px;
+}
+
+#updateForm li {
+  text-align: left;
+  
+}

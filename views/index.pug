@@ -1,0 +1,71 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title CRUD Mutably API
+  link(type='text/css', rel='stylesheet', href='style.css')
+  body
+    h1 Mutably API: Books
+    h2 Reset
+    #listInfo
+      ul
+        li
+          button Delete
+          h2
+          img
+          h3
+          h5
+    #addForm
+      form
+        fieldset
+          legend Add Book
+          |             Title:
+          input(type='text', name='title')
+          |             Image:
+          input(type='text', name='image')
+          |             Author:
+          input(type='text', name='author')
+          |             Release Date:
+          input(type='text', name='releaseDate')
+          button.addButton Add
+          button.cancelButton cancel
+    #updateForm
+      form
+        fieldset
+          legend Edit Book
+          ul
+            li
+              button.editButton Edit
+              |  Title:
+              button.saveButton Save
+              span.viewFileInfo ViewSpan
+              span.editFileInfo
+                input(name='title')
+            li
+              button.editButton Edit
+              |  Image:
+              button.saveButton Save
+              span.viewFileInfo ViewSpan
+              span.editFileInfo
+                input(name='image')
+            li
+              button.editButton Edit
+              |  Author:
+              button.saveButton Save
+              span.viewFileInfo ViewSpan
+              span.editFileInfo
+                input(name='author')
+            li
+              button.editButton Edit
+              |  Release Date:
+              button.saveButton Save
+              span.viewFileInfo ViewSpan
+              span.editFileInfo
+                input(name='releaseDate')
+            button.cancelButton cancel
+            button.saveAllButton Save
+            ul
+      div
+        console
+      script(type='text/javascript', src='https://code.jquery.com/jquery-3.2.1.min.js')
+      script(type='text/javascript', src='main.js')
