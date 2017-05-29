@@ -7,70 +7,70 @@
     <link type="text/css" rel="stylesheet" href="./style.css">
   <body>
     <h1>Mutably API: Books</h1>
-    <h2>Reset</h2>
+    <h2><a target="_blank" href="https://mutably.herokuapp.com/reset">Reset</a></h2>
     <div id="listInfo">
     </div>
 
     <div id="addForm">
-      <form>
-        <fieldset>
-            <legend>Add Book</legend>
-            Title:
-            <input type="text" name="title">
-            Image:
-            <input type="text" name="image">
-            Author:
-            <input type="text" name="author">
-            Release Date:
-            <input type="text" name="releaseDate">
-            <button class="addButton">Add</button>
-            <button class="cancelButton">cancel</button>
-        </fieldset>
-      </form>
+      <fieldset>
+          <legend>Add Book</legend>
+          Title:
+          <input type="text" id="title">
+          Image:
+          <input type="text" id="image">
+          Author:
+          <input type="text" id="author">
+          Release Date:
+          <input type="text" id="releaseDate">
+          <button class="addButton">Add</button>
+          <button class="cancelButton">cancel</button>
+      </fieldset>
     </div>
 
     <div id="updateForm">
-      <form>
-        <fieldset>
-          <legend>Edit Book</legend>
-          <ul>
-            <li>
-              <button class="editButton">Edit</button> Title:
-              <button class="saveButton">Save</button>
-              <span class="viewFileInfo">ViewSpan</span>
-              <span class="editFileInfo">
-                <input name="title">
-              </span>
-            </li>
-            <li>
-              <button class="editButton">Edit</button> Image:
-              <button class="saveButton">Save</button>
-              <span class="viewFileInfo">ViewSpan</span>
-              <span class="editFileInfo">
-                <input name="image"> 
-              </span>
-            </li>
-            <li>
-              <button class="editButton">Edit</button> Author:
-              <button class="saveButton">Save</button>
-              <span class="viewFileInfo">ViewSpan</span>
-              <span class="editFileInfo">
-                <input name="author">
-              </span>
-            </li>
-            <li>
-              <button class="editButton">Edit</button> Release Date:
-              <button class="saveButton">Save</button>
-              <span class="viewFileInfo">ViewSpan</span>
-              <span class="editFileInfo">
-                <input name="releaseDate">
-              </span>
-            </li>
-            <button class="cancelButton">cancel</button>
-            <button class="saveAllButton">Save</button>
-          <ul>
-        </fieldset>
-      </form>
+      <fieldset>
+        <legend>Edit Book</legend>
+        <ul>
+          <li>
+            <button class="editButton">Edit</button> 
+            <button class="saveButton">Save</button>
+            Title:
+            <span class="viewEditTitle viewSpan"></span>
+            <span class="editFileInfo">
+              <input class="viewEditTitle viewEdit">
+            </span>
+          </li>
+          <li>
+            <button class="editButton">Edit</button> 
+            <button class="saveButton">Save</button>
+            Image:
+            <span class="viewEditImage viewSpan">ViewSpan</span>
+            <span class="editFileInfo">
+              <input class="viewEditImage viewEdit"> 
+            </span>
+          </li>
+          <li>
+            <button class="editButton">Edit</button> 
+            <button class="saveButton">Save</button>
+            Author:
+            <span class="viewEditAuthor viewSpan">ViewSpan</span>
+            <span class="editFileInfo">
+              <input class="viewEditAuthor viewEdit">
+            </span>
+          </li>
+          <li>
+            <button class="editButton">Edit</button>
+            <button class="saveButton">Save</button>
+            Release Date:
+            <span class="viewEditReleaseDate viewSpan">ViewSpan</span>
+            <span class="editFileInfo">
+              <input class="viewEditReleaseDate viewEdit">
+            </span>
+          </li>
+          <button class="saveAllButton">Save</button>
+          <button class="cancelButton">Cancel</button>
+        <ul>
+      </fieldset>
     </div>
     <div class="hello"></div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
